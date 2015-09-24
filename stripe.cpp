@@ -178,7 +178,10 @@ int curl(string qs)
 	
 	if(ret == CURLE_OK && found!= string::npos){
 		cout << "<p><img src=\"../faenza/success.svg\" class=\"img-responsive\" alt=\"Error Icon\"></p>";
-		
+		cout << "<p><div class=\"text-danger\">\
+					Do not refresh current page or transaction will be sent again.\
+				</div><p></p>\
+				<p>If no errors are reported, an email reciept will be sent automatically.</p>";
 		cout << "<h1 id=\"type\">Transmission completed:</h1>";
 		
 		cout << "\
