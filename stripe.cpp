@@ -157,7 +157,7 @@ int curl(string qs)
 	hnd = curl_easy_init();
 	curl_easy_setopt(hnd, CURLOPT_URL, "https://api.stripe.com/v1/charges");
 	curl_easy_setopt(hnd, CURLOPT_NOPROGRESS, 1L);
-	curl_easy_setopt(hnd, CURLOPT_USERPWD, "YOUR STRIPE SECRET KEY:");
+	curl_easy_setopt(hnd, CURLOPT_USERPWD, "YOUR_STRIPE_SECRET_KEY:");
 	curl_easy_setopt(hnd, CURLOPT_POSTFIELDS, curlString.c_str());
 	curl_easy_setopt(hnd, CURLOPT_POSTFIELDSIZE_LARGE, (curl_off_t)curlString.length());
 	curl_easy_setopt(hnd, CURLOPT_USERAGENT, "curl/7.38.0");
